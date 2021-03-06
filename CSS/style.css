@@ -1,0 +1,474 @@
+body {
+    margin: auto;
+    max-width: 1200px;
+    font: 1em sans-serif;
+    color: rgb(41, 41, 41);
+}
+
+.header {
+    max-width: 100%;
+    margin: 0;
+    background: url(../images/header.jpeg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: rgba(235, 231, 225, 0.496);
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width:600px) {
+    .row,
+    .row-card {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    text-align: center;
+}
+
+.logotype {
+    max-width: 25%;
+    margin: 0;
+}
+
+.phone {
+    padding: 0 20px;
+}
+
+.phone,
+.fa-mobile-alt {
+    font: bold 1.1rem sans-serif;
+    text-align: center;
+}
+
+.title {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    margin: 0;
+    text-align: center;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgba(16, 88, 42, 0.598);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.feedback-title,
+.feedback-subtitle {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.feedback input {
+    margin: 10px auto;
+}
+
+.feedback-submit {
+    text-align: center;
+}
+
+.sidebar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.sidebar-title {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(16, 88, 42);
+}
+
+.sidebar-subtitle {
+    font-weight: 900;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    padding: 5px;
+}
+
+.col-ico {
+    margin-bottom: 30px;
+    color: rgb(16, 88, 42);
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px 20px 30px 20px;
+}
+
+.col-item {
+    width: 100%;
+    margin-top: -30px;
+    height: 100%;
+    border-left: solid 1px rgb(16, 88, 42);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .col-item {
+        width: 200px;
+    }
+}
+
+.col-title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:600px) {
+    .col-title {
+        margin: 15px;
+    }
+}
+
+.col-title>span {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 5px 0;
+    font-weight: 900;
+    color: rgb(16, 88, 42);
+}
+
+.col-content {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 0.65rem;
+    text-align: start;
+}
+
+.form-search {
+    color: rgb(16, 88, 42);
+    width: 100%;
+    height: 300px;
+    background: url(../images/panorama-urban-city.jpg) no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 5px rgb(178, 240, 200);
+    border-bottom: solid 5px rgb(178, 240, 200);
+}
+
+@media (max-width:900px) {
+    label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+fieldset {
+    width: 100%;
+    display: flex;
+    background-color: rgba(235, 231, 225, 0.782);
+    border: solid 2px rgb(16, 88, 42);
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: url(../images/key.jpg) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.wrapper-list,
+.wrapper-aside {
+    padding: 15px 0;
+    height: 100%;
+    margin: 0;
+}
+
+.row-list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.negativ {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.negativ-list,
+.positiv-list {
+    list-style-type: none;
+    font-size: smaller;
+}
+
+.neg-heading {
+    color: red;
+    text-align: center;
+}
+
+.negativ-item {
+    line-height: 2;
+    font-weight: bold;
+}
+
+.negativ-item::before {
+    content: "\2718";
+    padding: 0.5rem;
+    color: red;
+}
+
+.positiv {
+    padding: 5px;
+    border: solid 5px rgb(16, 88, 42);
+    border-radius: 5px;
+    background-color: rgba(235, 231, 225, 0.496);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pos-heading {
+    color: rgb(16, 88, 42);
+    text-align: center;
+}
+
+.positiv-item {
+    line-height: 2;
+}
+
+.positiv-item::before {
+    content: "\2714";
+    font-weight: bolder;
+    font-size: large;
+    padding: 0.5rem;
+    color: rgb(16, 88, 42);
+}
+
+.container-aside {
+    padding: 0;
+    width: 100%;
+    background: url(../images/panorama-berdyansk.jpg) no-repeat;
+    background-size: cover;
+}
+
+.aside-heading {
+    text-align: center;
+    color: rgb(16, 88, 42);
+}
+
+.sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-transform: uppercase;
+}
+
+.row-aside {
+    height: 100%;
+}
+
+.col-color {
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aside-ico {
+    color: rgb(16, 88, 42);
+    font-size: 3rem;
+    margin: 20px 0 0 0;
+}
+
+.col p {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn-aside {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    width: 90px;
+    background-color: tomato;
+    font-weight: bolder;
+    font: 1em sans-serif;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.btn-aside:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.container_aside-bg {
+    background: none;
+    background-size: cover;
+    margin: 3px 0;
+}
+
+.row-aside-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-aside-list ul {
+    list-style-type: none;
+}
+
+.aside-item::before {
+    content: "\2611";
+    margin-right: 10px;
+}
+
+.container-card {
+    background: url(../images/hous-sea.jpg) no-repeat;
+    background-size: cover;
+}
+
+.wrapper-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-heading {
+    color: rgb(16, 88, 42);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.card {
+    width: 20%;
+    margin: 30px 0;
+    padding: 10px;
+    background-color: rgba(235, 231, 225, 0.496);
+    border: solid 1px rgb(16, 88, 42);
+}
+
+.card-photo {
+    width: 100%;
+    border: solid 1px rgb(16, 88, 42);
+}
+
+.wrapper-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-btn {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    /* font-size: 0,2rem; */
+    font-weight: bold;
+    border: solid 2px rgb(41, 41, 41);
+    border-radius: 5px;
+    color: rgb(41, 41, 41);
+}
+
+.subheading {
+    align-self: flex-start;
+    padding-left: 100px;
+}
+
+@media (max-width:600px) {
+    .subheading {
+        align-self: center;
+    }
+}
+
+.offers {
+    font-size: 0.7rem;
+    padding-bottom: 30px;
+}
+
+.footer {
+    color: white;
+}
+
+.container-footer {
+    background: url(../images/footer-bg.png);
+    background-size: cover;
+}
+
+.wrapper-footer {
+    background-color: rgba(235, 231, 225, 0.231);
+}
+
+.footer-heading {
+    text-align: center;
+    margin: 50px;
+}

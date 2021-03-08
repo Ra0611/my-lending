@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My lending</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -54,14 +55,14 @@
                         </div>
                         <div class="col-content">
                             <span> Наши менеджеры всегда готовы выслушать вас и ответить на все ваши вопросы</spans>
-                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <i class="fas fa-handshake col-ico"></i>
-                        <div class="col-item">
-                            <div class="col-title">
-                                <span>Честные сделки</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-handshake col-ico"></i>
+                    <div class="col-item">
+                        <div class="col-title">
+                            <span>Честные сделки</span>
                         </div>
                         <div class="col-content">
                             <span>Мы проводим все наши сделки исключительно на договорной основе</span>
@@ -103,12 +104,11 @@
                 </div>
             </div>
         </div>
-        </div>
         <form action="formdata" class="form-search" method="post">
-            <fieldset class="">
+            <fieldset class="fieldset">
                 <legend>Выберите свой вариант</legend>
                 <p><select name="district" id="district" placeholder="Выберите район">
-                        <option >Район</option>
+                        <option>Район</option>
                         <option value="kosa" class="district-item">Бердянская коса</option>
                         <option value="slobodka" class="district-item">Слободка</option>
                         <option value="liski" class="district-item">Лиски</option>
@@ -121,7 +121,7 @@
                     </select>
                 </p>
                 <p><select name="property" id="property">
-                        <option >Тип недвижимости</option>
+                        <option>Тип недвижимости</option>
                         <option value="kosa" class="district-item">Квартира</option>
                         <option value="slobodka" class="district-item">Дом</option>
                         <option value="liski" class="district-item">Комната</option>
@@ -129,14 +129,16 @@
                     </select>
                 </p>
                 <p><label for="price-select">Выберите цену (грн/сут):</label>
-                <input id="price-select" type="number" min="100" max="800" step="50" value="100"></p>
+                    <input id="price-select" type="number" min="100" max="800" step="50" value="100">
+                    <input type="submit" value="Отправить">
+                </p>
             </fieldset>
         </form>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="row">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ab.
+
             </div>
         </div>
     </footer>
